@@ -1,0 +1,11 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: cloud-billing-destination
+  namespace: vdc
+spec:
+  host: cloud-billing
+  subsets:
+  - name: base
+    labels:
+      version: base
