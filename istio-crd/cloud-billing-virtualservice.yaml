@@ -1,0 +1,25 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: cloud-billing-virtualservice
+  namespace: vdc
+spec:
+  hosts:
+  - cloud-billing.cloud-uat3.zilliz.com
+  - cloud-billing
+  gateways:
+  - vdc-gateway
+  - mesh
+  http:
+  - match:
+    - headers:
+        x-env:
+          exact: base
+    route:
+    - destination:
+        host: cloud-billing
+        subset: base
+  - route:
+        - destination:
+            host: cloud-billing
+            subset: base
