@@ -14,6 +14,14 @@ spec:
   - match:
     - headers:
         x-env:
+          exact: feature-longtermv2
+    route:
+    - destination:
+        host: cloud-billing
+        subset: feature-longtermv2
+  - match:
+    - headers:
+        x-env:
           exact: base
     route:
     - destination:
