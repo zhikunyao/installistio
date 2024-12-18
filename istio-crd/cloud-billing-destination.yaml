@@ -6,6 +6,9 @@ metadata:
 spec:
   host: cloud-billing
   subsets:
+  - name: feature-longtermv2
+    labels:
+      version: feature-longtermv2
   - name: base
     labels:
       version: base
