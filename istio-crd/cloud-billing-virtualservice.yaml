@@ -5,7 +5,7 @@ metadata:
   namespace: vdc
 spec:
   hosts:
-  - cloud-billing.cloud-uat3.zilliz.com
+  - cloud-billing.cloud-uat3.zilliz.cn
   - cloud-billing
   gateways:
   - vdc-gateway
