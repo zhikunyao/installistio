@@ -6,7 +6,7 @@ metadata:
   namespace: vdc
 spec:
   selector:
-    istio: ingressgateway
+    istio: ali-vdc-test-istio-system-gateway
   servers:
     - hosts:
         - cloud-uat.zilliz.cn
