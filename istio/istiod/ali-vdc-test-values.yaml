@@ -185,7 +185,7 @@ telemetry:
       #  disable_host_header_fallback: true
     # Access Log Policy Filter Settings. This enables filtering of access logs from stackdriver.
     accessLogPolicy:
-      enabled: false
+      enabled: true
       # To reduce the number of successful logs, default log window duration is
       # set to 12 hours.
       logWindowDuration: "43200s"
@@ -332,7 +332,7 @@ global:
 
     # Log level for proxy, applies to gateways and sidecars.
     # Expected values are: trace|debug|info|warning|error|critical|off
-    logLevel: warning
+    logLevel: info
 
     #If set to true, istio-proxy container will have privileged securityContext
     privileged: false
