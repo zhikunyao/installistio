@@ -52,7 +52,8 @@ service:
     port: 443
     protocol: TCP
     targetPort: 443
-  annotations: {}
+  annotations:
+    service.beta.kubernetes.io/alibaba-cloud-loadbalancer-address-type: intranet
   loadBalancerIP: ""
   loadBalancerSourceRanges: []
   externalTrafficPolicy: ""
