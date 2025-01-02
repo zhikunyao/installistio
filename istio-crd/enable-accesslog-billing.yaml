@@ -1,0 +1,12 @@
+apiVersion: telemetry.istio.io/v1alpha1
+kind: Telemetry
+metadata:
+  name: enable-access-logging-billing
+  namespace: vdc
+spec:
+  selector:
+    matchLabels:
+      app: cloud-billing
+  accessLogging:
+    - providers:
+      - name: envoy
