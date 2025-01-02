@@ -9,7 +9,7 @@ spec:
     istio: ali-vdc-test-istio-system-gateway
   servers:
     - hosts:
-        - cloud-uat.zilliz.cn
+        - cloud-billing-preview.cloud-uat.zilliz.cn
         - cloud-billing.cloud-uat.zilliz.cn
       port:
         name: http
@@ -18,12 +18,12 @@ spec:
       tls:
         httpsRedirect: true
     - hosts:
-        - cloud-uat.zilliz.cn
+        - cloud-billing-preview.cloud-uat.zilliz.cn
         - cloud-billing.cloud-uat.zilliz.cn
       port:
         name: https
         number: 443
         protocol: HTTPS
       tls:
-        credentialName: vdc-cloud-uat-zilliz-cn
+        credentialName: vdc-cloud-uat-zilliz-cn-autocertmanager
         mode: SIMPLE
