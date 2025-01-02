@@ -25,5 +25,5 @@ spec:
         number: 443
         protocol: HTTPS
       tls:
-        credentialName: vdc-cloud-uat-zilliz-cn-autocertmanager-haha
+        credentialName: vdc-cloud-uat-zilliz-cn-autocertmanager
         mode: SIMPLE
